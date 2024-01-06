@@ -1,45 +1,46 @@
-Este projeto tem como objetivo criar um sistema simples em Python para gerenciar informações armazenadas em três pastas diferentes. O programa permite ao usuário inserir dados em cada pasta, visualizar o conteúdo de cada pasta, apagar dados específicos de uma pasta, limpar o conteúdo de uma pasta e finalizar o programa.
+O código tem como objetivo criar e manipular um banco de dados SQLite para armazenar informações em três tabelas diferentes, simulando o conceito de "pastas". Cada pasta representa uma tabela, e o programa oferece funcionalidades como inserir dados, apagar dados, limpar uma pasta específica e sair do programa.
 
 Estrutura do Código:
-Funções Definidas:
-lin(): Imprime uma linha decorativa para melhorar a visualização no console.
-Listas:
-lista1, lista2, lista3: Listas para armazenar os dados de cada pasta.
-Loops Principais:
-O programa principal está estruturado em loops para permitir que o usuário execute diversas ações. As principais funcionalidades são:
 
-Inserir Dados em uma Pasta:
+Conexão com o Banco de Dados:
 
-O usuário escolhe a pasta na qual deseja inserir dados.
-O programa solicita as informações a serem armazenadas.
-Os dados são adicionados à lista correspondente.
-Visualizar Dados de uma Pasta:
+O código inicia estabelecendo uma conexão com um banco de dados SQLite chamado 'banco_dados.db'.
+Um cursor é criado para executar comandos SQL no banco de dados.
+Verificação e Criação de Tabelas:
 
-O usuário escolhe a pasta que deseja visualizar.
-O programa exibe o conteúdo da pasta no console.
-Apagar Dados de uma Pasta:
+Verifica se as tabelas 'dados_1', 'dados_2' e 'dados_3' existem no banco de dados. Se não existirem, as tabelas são criadas.
+Listas e Variáveis Globais:
 
-O usuário escolhe a pasta da qual deseja apagar dados.
-O programa solicita o número do item a ser apagado.
-O item é removido da lista.
+São definidas três listas (lista1, lista2, lista3) para armazenar os dados de cada "pasta".
+A variável global 'cont' é inicializada como "s".
+Funções:
+
+A função 'lin()' imprime uma linha separadora para melhorar a legibilidade do menu.
+Loop Principal:
+
+Um loop principal permite ao usuário interagir continuamente com o programa até optar por sair.
+Menu Interativo:
+
+O programa exibe um menu interativo com opções para escolher uma "pasta", apagar dados, limpar uma pasta específica ou sair do programa.
+Inserção de Dados:
+
+Para cada "pasta", o usuário pode adicionar dados, que são inseridos na lista correspondente e no banco de dados.
+Apagar Dados:
+
+Permite ao usuário escolher uma "pasta" e apagar dados específicos. Os dados também são removidos do banco de dados.
 Limpar Pasta:
 
-O usuário escolhe a pasta que deseja limpar.
-A lista correspondente é esvaziada.
-Finalizar o Programa:
+Permite ao usuário limpar todos os dados de uma "pasta" específica, removendo tanto da lista quanto do banco de dados.
+Encerramento do Programa:
 
-O usuário escolhe a opção para sair do programa.
-As listas são salvas em um arquivo de texto chamado "banco_de_dados.txt".
-Funcionamento do Código:
-O programa exibe um menu com opções para cada pasta, apagar dados, limpar pasta e sair.
-
-O usuário escolhe a ação desejada.
-
-Dependendo da escolha do usuário, o programa executa as ações correspondentes, como adicionar dados, visualizar dados, apagar dados ou limpar uma pasta.
-
-O usuário pode repetir essas ações até decidir sair do programa.
-
-Ao final, as informações armazenadas em cada pasta são salvas em um arquivo de texto.
+Ao escolher a opção "6", o programa exibe uma mensagem final, cria um arquivo "banco_de_dados.txt" com as informações das pastas e encerra.
+Observações e Sugestões de Melhoria:
 
 Conclusão:
-O projeto atinge seu objetivo ao fornecer um sistema de gestão de pastas simples, permitindo ao usuário inserir, visualizar, apagar e limpar dados.
+O código é funcional e atinge seu objetivo de criar um sistema de "pastas" com a capacidade de armazenar e manipular dados em um banco de dados SQLite. Sugerem-se algumas melhorias para tornar o código mais robusto e fácil de entender.
+
+
+
+
+
+
