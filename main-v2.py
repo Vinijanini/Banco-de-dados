@@ -37,7 +37,6 @@ for c in cursor.fetchall():
         lista3.append(c2)
 
 #Variáveis globais#
-cont2 = "s"
 cont = "s"
 
 #Funções#
