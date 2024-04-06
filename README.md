@@ -1,46 +1,28 @@
-O código tem como objetivo criar e manipular um banco de dados SQLite para armazenar informações em três tabelas diferentes, simulando o conceito de "pastas". Cada pasta representa uma tabela, e o programa oferece funcionalidades como inserir dados, apagar dados, limpar uma pasta específica e sair do programa.
+Descrição:
 
-Estrutura do Código:
+Este programa permite ao usuário armazenar e manipular informações em três pastas distintas, armazenadas em um banco de dados SQLite. Cada pasta é representada por uma tabela no banco de dados.
+Requisitos:
 
-Conexão com o Banco de Dados:
+    Python 3.x
+    Biblioteca sqlite3 (normalmente já incluída na instalação padrão do Python)
 
-O código inicia estabelecendo uma conexão com um banco de dados SQLite chamado 'banco_dados.db'.
-Um cursor é criado para executar comandos SQL no banco de dados.
-Verificação e Criação de Tabelas:
+Como Usar:
 
-Verifica se as tabelas 'dados_1', 'dados_2' e 'dados_3' existem no banco de dados. Se não existirem, as tabelas são criadas.
-Listas e Variáveis Globais:
+    Execute o programa em um ambiente Python.
+    O programa exibirá um menu com as seguintes opções:
+        [1] Visualizar e adicionar dados na Pasta 1
+        [2] Visualizar e adicionar dados na Pasta 2
+        [3] Visualizar e adicionar dados na Pasta 3
+        [4] Apagar dados de uma pasta específica
+        [5] Limpar uma pasta específica
+        [6] Sair do programa
+    Escolha a opção desejada digitando o número correspondente.
+    Para inserir dados em uma pasta, selecione a pasta desejada e siga as instruções.
+    Para apagar dados de uma pasta, selecione a opção correspondente e siga as instruções para selecionar a pasta e o item a ser removido.
+    Para limpar uma pasta, selecione a opção correspondente e escolha a pasta a ser limpa.
+    O programa irá armazenar todas as informações em um arquivo chamado "banco_de_dados.txt" ao finalizar a execução.
 
-São definidas três listas (lista1, lista2, lista3) para armazenar os dados de cada "pasta".
-A variável global 'cont' é inicializada como "s".
-Funções:
+Observações:
 
-A função 'lin()' imprime uma linha separadora para melhorar a legibilidade do menu.
-Loop Principal:
-
-Um loop principal permite ao usuário interagir continuamente com o programa até optar por sair.
-Menu Interativo:
-
-O programa exibe um menu interativo com opções para escolher uma "pasta", apagar dados, limpar uma pasta específica ou sair do programa.
-Inserção de Dados:
-
-Para cada "pasta", o usuário pode adicionar dados, que são inseridos na lista correspondente e no banco de dados.
-Apagar Dados:
-
-Permite ao usuário escolher uma "pasta" e apagar dados específicos. Os dados também são removidos do banco de dados.
-Limpar Pasta:
-
-Permite ao usuário limpar todos os dados de uma "pasta" específica, removendo tanto da lista quanto do banco de dados.
-Encerramento do Programa:
-
-Ao escolher a opção "6", o programa exibe uma mensagem final, cria um arquivo "banco_de_dados.txt" com as informações das pastas e encerra.
-Observações e Sugestões de Melhoria:
-
-Conclusão:
-O código é funcional e atinge seu objetivo de criar um sistema de "pastas" com a capacidade de armazenar e manipular dados em um banco de dados SQLite. Sugerem-se algumas melhorias para tornar o código mais robusto e fácil de entender.
-
-
-
-
-
-
+    Certifique-se de não fechar o programa abruptamente, pois isso pode resultar em perda de dados não salvos.
+    Todos os dados são armazenados permanentemente no banco de dados SQLite, garantindo a persistência dos dados entre diferentes execuções do programa.
